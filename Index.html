@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins CI/CD Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+        }
+        .box {
+            background: rgba(0,0,0,0.2);
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: white;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>🚀 CI/CD Pipeline Demo</h1>
+        <p>Deployed using Jenkins Pipeline</p>
+        <p id="time"></p>
+        <button onclick="showTime()">Click to Show Time</button>
+    </div>
+
+    <script>
+        function showTime() {
+            document.getElementById("time").innerHTML = new Date();
+        }
+    </script>
+
+</body>
+</html>
